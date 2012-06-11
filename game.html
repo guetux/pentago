@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <title>pentago</title>
+
+  <link rel="stylesheet" type="text/css" href="game.css" />
+  <script type="text/javascript" src="lib/jquery.min.js"></script>
+  <script type="text/javascript" src="game.js"></script>
+</head>
+
+<body>
+  <div id="game" class="p1_place clearfix">
+      <div id="state" class="clearfix">
+          <input id="p1_name" class="player_name" type="text" value="Player 1">
+
+          <input id="p2_name" class="player_name" type="text" value="Player 2">
+      </div>
+
+      <div id="board" class="clearfix">
+        <div id="rotate_0_l" data-i="0" data-d="l" class="rotate"></div>
+        <div id="rotate_0_r" data-i="0" data-d="r" class="rotate"></div>
+        <div id="square_0" data-i="0" data-r="0" class="square clearfix">
+            <div data-x="0" data-y="0" class="empty pocket"></div>
+            <div data-x="0" data-y="1" class="empty pocket"></div>
+            <div data-x="0" data-y="2" class="empty pocket"></div>
+            <div data-x="1" data-y="0" class="empty pocket"></div>
+            <div data-x="1" data-y="1" class="empty pocket"></div>
+            <div data-x="1" data-y="2" class="empty pocket"></div>
+            <div data-x="2" data-y="0" class="empty pocket"></div>
+            <div data-x="2" data-y="1" class="empty pocket"></div>
+            <div data-x="2" data-y="2" class="empty pocket"></div>
+        </div>
+        <div id="rotate_1_l" data-i="1" data-d="l" class="rotate"></div>
+        <div id="rotate_1_r" data-i="1" data-d="r"class="rotate"></div>
+        <div id="square_1" data-i="1" data-r="0" class="square clearfix">
+            <div data-x="0" data-y="3" class="empty pocket"></div>
+            <div data-x="0" data-y="4" class="empty pocket"></div>
+            <div data-x="0" data-y="5" class="empty pocket"></div>
+            <div data-x="1" data-y="3" class="empty pocket"></div>
+            <div data-x="1" data-y="4" class="empty pocket"></div>
+            <div data-x="1" data-y="5" class="empty pocket"></div>
+            <div data-x="2" data-y="3" class="empty pocket"></div>
+            <div data-x="2" data-y="4" class="empty pocket"></div>
+            <div data-x="2" data-y="5" class="empty pocket"></div>
+        </div>
+        <br class="clear" />
+        <div id="rotate_2_l" data-i="2" data-d="l" class="rotate"></div>
+        <div id="rotate_2_r" data-i="2" data-d="r" class="rotate"></div>
+        <div id="square_2" data-i="2" data-r="0"  class="square clearfix">
+            <div data-x="3" data-y="0" class="empty pocket"></div>
+            <div data-x="3" data-y="1" class="empty pocket"></div>
+            <div data-x="3" data-y="2" class="empty pocket"></div>
+            <div data-x="4" data-y="0" class="empty pocket"></div>
+            <div data-x="4" data-y="1" class="empty pocket"></div>
+            <div data-x="4" data-y="2" class="empty pocket"></div>
+            <div data-x="5" data-y="0" class="empty pocket"></div>
+            <div data-x="5" data-y="1" class="empty pocket"></div>
+            <div data-x="5" data-y="2" class="empty pocket"></div>
+        </div>
+        <div id="rotate_3_l" data-i="3" data-d="l" class="rotate"></div>
+        <div id="rotate_3_r" data-i="3" data-d="r" class="rotate"></div>
+        <div id="square_3" data-i="3" data-r="0" class="square clearfix">
+            <div data-x="3" data-y="3" class="empty pocket"></div>
+            <div data-x="3" data-y="4" class="empty pocket"></div>
+            <div data-x="3" data-y="5" class="empty pocket"></div>
+            <div data-x="4" data-y="3" class="empty pocket"></div>
+            <div data-x="4" data-y="4" class="empty pocket"></div>
+            <div data-x="4" data-y="5" class="empty pocket"></div>
+            <div data-x="5" data-y="3" class="empty pocket"></div>
+            <div data-x="5" data-y="4" class="empty pocket"></div>
+            <div data-x="5" data-y="5" class="empty pocket"></div>
+        </div>
+      </div>
+  </div>
+</body>
+
+</html>
