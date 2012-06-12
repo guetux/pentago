@@ -39,6 +39,7 @@ p { text-align: left }
 
 .player_name {
     display: block;
+    outline: none;
     border: none;
     margin: 10px 0;
     padding: 5px 0 5px 35px;
@@ -47,6 +48,10 @@ p { text-align: left }
     font-weight: bold;
     background-repeat: no-repeat;
     background-size: 30px 30px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background-color: #fee;
 }
 
 #p1_name {
@@ -56,6 +61,17 @@ p { text-align: left }
 #p2_name {
     background-image: url(img/black.png);
 }
+
+#game.p1_place #p1_name,
+#game.p1_rotate  #p1_name {
+    background-color: #dfd;
+}
+
+#game.p2_place  #p2_name,
+#game.p2_rotate  #p2_name {
+    background-color: #dfd;
+}
+
 
 #board {
     float: left;
