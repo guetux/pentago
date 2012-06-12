@@ -72,6 +72,12 @@ p { text-align: left }
     background-color: #dfd;
 }
 
+#p1_games_won,
+#p2_games_won {
+    font-size: 18px;
+    font-weight: bold;
+    color: #600;
+}
 
 #board {
     float: left;
