@@ -60,6 +60,8 @@ game = {
 
     reset_ui : function () {
         $('.pocket').removeClass('p1').removeClass('p2').addClass('empty');
+        $('#game').addClass('clearfix ' + game.STATES[game.state]);
+        $('.rotate').hide();
     },
 
     progress_state : function () {
