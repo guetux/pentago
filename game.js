@@ -181,11 +181,19 @@ game = {
     },
 
     render_square_rotation : function (square, rotation) {
-        square.css('-webkit-transform','rotate('+rotation+'deg)');
-        square.css('-moz-transform','rotate('+rotation+'deg)');
-        square.css('-o-transform','rotate('+rotation+'deg)');
-        square.css('-ms-transform','rotate('+rotation+'deg)');
-        square.css('transform','rotate('+rotation+'deg)');
+        square.css('-webkit-transform','rotate('+ rotation +'deg)');
+        square.css('-moz-transform','rotate('+ rotation +'deg)');
+        square.css('-o-transform','rotate('+ rotation +'deg)');
+        square.css('-ms-transform','rotate('+ rotation +'deg)');
+        square.css('transform','rotate('+ rotation +'deg)');
+        square.find('.pocket').each(function (i, pocket) {
+            var pocket = $(pocket);
+            pocket.css('-webkit-transform','rotate('+ -rotation +'deg)');
+            pocket.css('-moz-transform','rotate('+ -rotation +'deg)');
+            pocket.css('-o-transform','rotate('+ -rotation +'deg)');
+            pocket.css('-ms-transform','rotate('+ -rotation +'deg)');
+            pocket.css('transform','rotate('+ -rotation +'deg)');
+        });
     },
 
     get_board_copy : function () {
